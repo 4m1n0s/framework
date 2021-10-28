@@ -79,13 +79,13 @@ class ProviderRepository
     }
 
     /**
-     * Load the service provider manifest JSON file.
+     * Load the service provider manifest file.
      *
      * @return array|null
      */
     public function loadManifest()
     {
-        // The service manifest is a file containing a JSON representation of every
+        // The service manifest is a file containing a representation of every
         // service provided by the application and whether its provider is using
         // deferred loading or should be eagerly loaded on each request to us.
         if ($this->files->exists($this->manifestPath)) {
